@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Grandis Putra Haryadi — Portofolio | GTA VI Vice Edition</title>
+  <meta name="description" content="Portofolio pribadi Muhammad Grandis Putra Haryadi — Web Developer & UI Designer dengan tema GTA VI Vice City." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Yellowtail&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Vice City Ambient Background -->
+  <div class="vice-bg" aria-hidden="true">
+    <div class="vice-bg__glow vice-bg__glow--pink"></div>
+    <div class="vice-bg__glow vice-bg__glow--cyan"></div>
+    <div class="vice-bg__glow vice-bg__glow--orange"></div>
+    <div class="vice-bg__grid"></div>
+  </div>
+
+  <!-- Navbar / HUD Header -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="brand" aria-label="Beranda Grandis">
+        <span class="brand__badge">VI</span>
+        <span class="brand__text">
+          <span class="brand__name">GRANDIS</span>
+          <span class="brand__sub">LEONIDA // PORTFOLIO</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Navigasi utama">
+        <a href="#hero" class="nav-link active">Beranda</a>
+        <a href="#about" class="nav-link">Tentang Saya</a>
+        <a href="#projects" class="nav-link">Daftar Proyek</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </nav>
+
+      <div class="hud-controls">
+        <div class="wanted-stars" id="wantedStars" title="Klik untuk ubah Wanted Level" role="button" tabindex="0" aria-label="Wanted Level interaktif">
+          <span class="wanted-stars__label">LEVEL</span>
+          <span class="stars-wrap" aria-hidden="true">
+            <span class="star active">★</span>
+            <span class="star active">★</span>
+            <span class="star active">★</span>
+            <span class="star active">★</span>
+            <span class="star active">★</span>
+            <span class="star">★</span>
+          </span>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navLinks">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1. HERO SECTION -->
+    <section class="hero section" id="hero">
+      <!-- Retro Vice Sunset & Palm Silhouette SVG Backdrop -->
+      <div class="hero__scenery" aria-hidden="true">
+        <div class="vice-sun"></div>
+        <svg class="palm-silhouette palm-silhouette--left" viewBox="0 0 320 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M90 420C95 330 112 245 142 155C148 136 155 120 162 108C128 96 86 105 52 130C78 96 118 78 164 88C128 60 82 54 38 72C78 38 130 34 176 68C162 34 134 10 98 2C142 2 182 26 202 68C218 32 252 12 290 14C254 28 228 52 214 82C254 64 294 68 320 90C280 86 240 94 208 112C242 118 274 140 294 172C258 148 224 138 190 138C160 228 140 322 132 420H90Z" fill="url(#palmGrad1)"/>
+          <defs>
+            <linearGradient id="palmGrad1" x1="160" y1="0" x2="160" y2="420" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1b0d2e" stop-opacity="0.95"/>
+              <stop offset="1" stop-color="#090512" stop-opacity="1"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg class="palm-silhouette palm-silhouette--right" viewBox="0 0 320 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M230 420C225 330 208 245 178 155C172 136 165 120 158 108C192 96 234 105 268 130C242 96 202 78 156 88C192 60 238 54 282 72C242 38 190 34 144 68C158 34 186 10 222 2C178 2 138 26 118 68C102 32 68 12 30 14C66 28 92 52 106 82C66 64 26 68 0 90C40 86 80 94 112 112C78 118 46 140 26 172C62 148 96 138 130 138C160 228 180 322 188 420H230Z" fill="url(#palmGrad2)"/>
+          <defs>
+            <linearGradient id="palmGrad2" x1="160" y1="0" x2="160" y2="420" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1b0d2e" stop-opacity="0.95"/>
+              <stop offset="1" stop-color="#090512" stop-opacity="1"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <div class="vice-tag">
+            <span class="vice-tag__dot"></span>
+            <span>WELCOME TO VICE PORTFOLIO // EDITION VI</span>
+          </div>
+
+          <p class="hero__script">Leonida Creative Developer</p>
+          <h1 class="hero__title">
+            <span class="hero__title-top">MUHAMMAD GRANDIS</span>
+            <span class="hero__title-bottom">PUTRA HARYADI</span>
+          </h1>
+
+          <p class="hero__desc">
+            Membangun website modern, responsif, dan berkarakter visual kuat dengan perpaduan kode yang rapi, animasi interaktif, serta estetika sinematik ala Vice City.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">
+              <span>Lihat Daftar Proyek</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="https://wa.me/6285863753603?text=Halo%20Grandis,%20saya%20melihat%20portofolio%20Anda!" target="_blank" rel="noopener noreferrer" class="btn btn--cyan">
+              <span>Chat WhatsApp</span>
+            </a>
+            <a href="#contact" class="btn btn--ghost">
+              <span>Form Kontak</span>
+            </a>
+          </div>
+
+          <div class="hero__telemetry">
+            <div class="telemetry-item">
+              <span class="telemetry-item__label">WHATSAPP</span>
+              <a href="https://wa.me/6285863753603" target="_blank" rel="noopener noreferrer" class="telemetry-item__val">085863753603</a>
+            </div>
+            <div class="telemetry-item">
+              <span class="telemetry-item__label">EMAIL</span>
+              <a href="mailto:grandisputra13@gmail.com" class="telemetry-item__val">grandisputra13@gmail.com</a>
+            </div>
+            <div class="telemetry-item">
+              <span class="telemetry-item__label">STATUS</span>
+              <span class="telemetry-item__val telemetry-item__val--online">SIAP KOLABORASI</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Character Dossier Card with Uploaded Photo -->
+        <div class="hero__visual reveal">
+          <div class="dossier-card">
+            <div class="dossier-card__hud-top">
+              <span class="hud-pill">PLAYER 01</span>
+              <span class="hud-code">ID // MGP-H06</span>
+            </div>
+
+            <div class="dossier-card__frame">
+              <img
+                src="assets/grandis.jpg"
+                alt="Foto Muhammad Grandis Putra Haryadi"
+                class="dossier-card__img"
+              />
+              <div class="dossier-card__scanline" aria-hidden="true"></div>
+              <div class="dossier-card__vignette" aria-hidden="true"></div>
+              <div class="dossier-card__caption">
+                <span class="caption-name">M. GRANDIS P. H.</span>
+                <span class="caption-role">WEB DEVELOPER &amp; UI CREATOR</span>
+              </div>
+            </div>
+
+            <div class="dossier-card__stats">
+              <div class="mini-stat">
+                <span class="mini-stat__label">FRONTEND</span>
+                <div class="mini-stat__bar"><span style="--w: 94%"></span></div>
+              </div>
+              <div class="mini-stat">
+                <span class="mini-stat__label">UI / UX</span>
+                <div class="mini-stat__bar"><span style="--w: 90%"></span></div>
+              </div>
+              <div class="mini-stat">
+                <span class="mini-stat__label">RESPONSIVE</span>
+                <div class="mini-stat__bar"><span style="--w: 96%"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Gulir ke bagian Tentang Saya">
+        <span>SCROLL TO EXPLORE</span>
+        <div class="scroll-cue__line"></div>
+      </a>
+    </section>
+
+    <!-- 2. TENTANG SAYA SECTION -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">01 // CHARACTER PROFILE</span>
+          <h2 class="section-title">TENTANG <span>SAYA</span></h2>
+          <p class="section-subtitle">Mengenal lebih dekat latar belakang, keahlian teknis, dan gaya kerja saya.</p>
+        </div>
+
+        <div class="about__grid">
+          <!-- Profile Visual & Identity Card -->
+          <div class="about__profile reveal">
+            <div class="profile-card">
+              <div class="profile-card__media">
+                <img
+                  src="assets/grandis.jpg"
+                  alt="Potret Muhammad Grandis Putra Haryadi"
+                  class="profile-card__img"
+                  id="aboutPortrait"
+                />
+                <div class="profile-card__overlay"></div>
+                <button type="button" class="filter-chip" id="togglePhotoVibe" title="Ubah efek warna foto">
+                  Filter: <strong id="photoVibeLabel">Original</strong>
+                </button>
+              </div>
+
+              <div class="profile-card__info">
+                <h3 class="profile-card__name">Muhammad Grandis Putra Haryadi</h3>
+                <p class="profile-card__tagline">Web Developer &amp; Creative Designer</p>
+
+                <ul class="identity-list">
+                  <li>
+                    <span class="id-key">WhatsApp</span>
+                    <a href="https://wa.me/6285863753603" target="_blank" rel="noopener noreferrer" class="id-val">085863753603</a>
+                  </li>
+                  <li>
+                    <span class="id-key">Email</span>
+                    <a href="mailto:grandisputra13@gmail.com" class="id-val">grandisputra13@gmail.com</a>
+                  </li>
+                  <li>
+                    <span class="id-key">Fokus</span>
+                    <span class="id-val">HTML, CSS, JavaScript, Responsive Web</span>
+                  </li>
+                  <li>
+                    <span class="id-key">Ketersediaan</span>
+                    <span class="id-val id-val--accent">Terbuka untuk Proyek</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bio & Skills -->
+          <div class="about__details reveal">
+            <div class="glass-panel">
+              <div class="panel-header">
+                <span class="panel-badge">BIO // DOSSIER</span>
+                <span class="panel-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              </div>
+
+              <p class="about__lead">
+                Halo! Saya <strong>Muhammad Grandis Putra Haryadi</strong>, seorang pengembang web yang antusias merancang pengalaman digital yang cepat, responsif di semua ukuran layar, dan punya identitas visual yang berkesan.
+              </p>
+              <p class="about__body">
+                Saya percaya website yang baik bukan hanya berjalan mulus secara teknis, tetapi juga mampu bercerita melalui tata letak, tipografi, dan interaksi yang halus. Mulai dari landing page bertema sinematik hingga aplikasi web interaktif berbasis JavaScript, setiap detail selalu saya kerjakan dengan presisi.
+              </p>
+
+              <!-- GTA Stat Bars -->
+              <div class="skills-block">
+                <h4 class="skills-block__title">STATISTIK KEAHLIAN</h4>
+                <div class="skill-meters">
+                  <div class="skill-meter">
+                    <div class="skill-meter__head">
+                      <span>HTML5 &amp; Struktur Semantik</span>
+                      <span>95%</span>
+                    </div>
+                    <div class="skill-meter__track"><div class="skill-meter__fill" data-width="95%"></div></div>
+                  </div>
+
+                  <div class="skill-meter">
+                    <div class="skill-meter__head">
+                      <span>CSS3, Flexbox, Grid &amp; Animasi</span>
+                      <span>92%</span>
+                    </div>
+                    <div class="skill-meter__track"><div class="skill-meter__fill" data-width="92%"></div></div>
+                  </div>
+
+                  <div class="skill-meter">
+                    <div class="skill-meter__head">
+                      <span>JavaScript (DOM &amp; Interaktivitas)</span>
+                      <span>88%</span>
+                    </div>
+                    <div class="skill-meter__track"><div class="skill-meter__fill" data-width="88%"></div></div>
+                  </div>
+
+                  <div class="skill-meter">
+                    <div class="skill-meter__head">
+                      <span>Desain UI/UX &amp; Responsive Design</span>
+                      <span>91%</span>
+                    </div>
+                    <div class="skill-meter__track"><div class="skill-meter__fill" data-width="91%"></div></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-chips" aria-label="Teknologi yang dikuasai">
+                <span class="tech-chip">HTML5</span>
+                <span class="tech-chip">CSS3</span>
+                <span class="tech-chip">JavaScript ES6+</span>
+                <span class="tech-chip">Responsive UI</span>
+                <span class="tech-chip">Figma</span>
+                <span class="tech-chip">Git &amp; GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DAFTAR PROYEK SECTION -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">02 // MISSION LOGS</span>
+          <h2 class="section-title">DAFTAR <span>PROYEK</span></h2>
+          <p class="section-subtitle">Kumpulan proyek pilihan yang dirancang dengan fokus pada performa, estetika, dan responsivitas.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="project-filters reveal" role="tablist" aria-label="Filter kategori proyek">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Semua</button>
+          <button class="filter-btn" data-filter="webapp" role="tab" aria-selected="false">Web App</button>
+          <button class="filter-btn" data-filter="landing" role="tab" aria-selected="false">Landing Page</button>
+          <button class="filter-btn" data-filter="uiux" role="tab" aria-selected="false">UI / UX</button>
+        </div>
+
+        <!-- Projects Grid (Populated & Interactive via JS + Semantic Cards) -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Project 1 -->
+          <article class="project-card reveal" data-category="landing" data-project-id="1">
+            <div class="project-card__thumb project-thumb--1">
+              <div class="thumb-badge">LANDING PAGE</div>
+              <svg viewBox="0 0 320 180" class="thumb-svg" aria-hidden="true">
+                <defs>
+                  <linearGradient id="p1g" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#ff2e93"/>
+                    <stop offset="55%" stop-color="#ff8a3d"/>
+                    <stop offset="100%" stop-color="#220b38"/>
+                  </linearGradient>
+                </defs>
+                <rect width="320" height="180" fill="url(#p1g)" opacity="0.35"/>
+                <circle cx="160" cy="88" r="46" fill="#ff9e2c" opacity="0.85"/>
+                <rect x="0" y="122" width="320" height="58" fill="#0d0718" opacity="0.9"/>
+                <path d="M25 122 L60 80 L95 122 L135 68 L175 122 L225 75 L275 122 Z" fill="#180d2e"/>
+                <line x1="0" y1="138" x2="320" y2="138" stroke="#00f0ff" stroke-width="1.5" opacity="0.6"/>
+                <line x1="0" y1="156" x2="320" y2="156" stroke="#ff2e93" stroke-width="1.5" opacity="0.5"/>
+              </svg>
+              <span class="mission-rank">RANK S</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>MISI #01</span>
+                <span>2026</span>
+              </div>
+              <h3 class="project-card__title">Leonida Neon Store</h3>
+              <p class="project-card__desc">
+                Website toko streetwear modern dengan efek neon glassmorphism, filter produk cepat, dan keranjang belanja interaktif.
+              </p>
+              <div class="project-card__tags">
+                <span>HTML5</span>
+                <span>CSS Grid</span>
+                <span>JavaScript</span>
+              </div>
+              <button type="button" class="project-card__btn" data-open-modal="1">
+                <span>Buka Briefing Misi</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal" data-category="webapp" data-project-id="2">
+            <div class="project-card__thumb project-thumb--2">
+              <div class="thumb-badge">WEB APP</div>
+              <svg viewBox="0 0 320 180" class="thumb-svg" aria-hidden="true">
+                <rect width="320" height="180" fill="#0a1628"/>
+                <circle cx="245" cy="52" r="34" fill="#00f0ff" opacity="0.25"/>
+                <rect x="28" y="34" width="160" height="112" rx="10" fill="#131029" stroke="#00f0ff" stroke-width="1.5"/>
+                <rect x="44" y="54" width="75" height="10" rx="4" fill="#ff2e93"/>
+                <rect x="44" y="76" width="126" height="8" rx="4" fill="#ffffff" opacity="0.25"/>
+                <rect x="44" y="92" width="102" height="8" rx="4" fill="#ffffff" opacity="0.25"/>
+                <rect x="44" y="114" width="54" height="18" rx="4" fill="#00f0ff"/>
+                <path d="M210 130 Q235 90 255 110 T295 85" stroke="#ff9e2c" stroke-width="3" fill="none"/>
+              </svg>
+              <span class="mission-rank">RANK S</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>MISI #02</span>
+                <span>2026</span>
+              </div>
+              <h3 class="project-card__title">Vice Radio &amp; Weather HUD</h3>
+              <p class="project-card__desc">
+                Dashboard cuaca real-time &amp; pemutar audio visual bergaya HUD gim dengan tema malam neon yang responsif di desktop maupun HP.
+              </p>
+              <div class="project-card__tags">
+                <span>JavaScript</span>
+                <span>Canvas API</span>
+                <span>CSS Flex</span>
+              </div>
+              <button type="button" class="project-card__btn" data-open-modal="2">
+                <span>Buka Briefing Misi</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal" data-category="landing" data-project-id="3">
+            <div class="project-card__thumb project-thumb--3">
+              <div class="thumb-badge">LANDING PAGE</div>
+              <svg viewBox="0 0 320 180" class="thumb-svg" aria-hidden="true">
+                <rect width="320" height="180" fill="#1c0b2b"/>
+                <circle cx="160" cy="110" r="60" fill="#ff5e9a" opacity="0.35"/>
+                <path d="M0 135 Q80 105 160 130 T320 120 L320 180 L0 180 Z" fill="#00d2d3" opacity="0.3"/>
+                <path d="M0 150 Q90 130 180 148 T320 140 L320 180 L0 180 Z" fill="#0a0614"/>
+                <rect x="65" y="38" width="190" height="32" rx="6" fill="#ffffff" opacity="0.1" stroke="#ffd166" stroke-width="1"/>
+              </svg>
+              <span class="mission-rank">RANK A+</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>MISI #03</span>
+                <span>2025</span>
+              </div>
+              <h3 class="project-card__title">Sunset Coast Travel</h3>
+              <p class="project-card__desc">
+                Situs promosi destinasi wisata pantai tropis dengan galeri interaktif, estimator paket liburan, dan formulir reservasi cepat.
+              </p>
+              <div class="project-card__tags">
+                <span>HTML5</span>
+                <span>CSS Animation</span>
+                <span>Vanilla JS</span>
+              </div>
+              <button type="button" class="project-card__btn" data-open-modal="3">
+                <span>Buka Briefing Misi</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal" data-category="webapp" data-project-id="4">
+            <div class="project-card__thumb project-thumb--4">
+              <div class="thumb-badge">WEB APP</div>
+              <svg viewBox="0 0 320 180" class="thumb-svg" aria-hidden="true">
+                <rect width="320" height="180" fill="#110b22"/>
+                <rect x="34" y="28" width="76" height="124" rx="8" fill="#1e1338" stroke="#ff2e93" stroke-width="1.2"/>
+                <rect x="122" y="28" width="76" height="124" rx="8" fill="#1e1338" stroke="#ff9e2c" stroke-width="1.2"/>
+                <rect x="210" y="28" width="76" height="124" rx="8" fill="#1e1338" stroke="#00f0ff" stroke-width="1.2"/>
+                <rect x="44" y="46" width="56" height="16" rx="4" fill="#ff2e93" opacity="0.6"/>
+                <rect x="132" y="46" width="56" height="16" rx="4" fill="#ff9e2c" opacity="0.6"/>
+                <rect x="220" y="46" width="56" height="16" rx="4" fill="#00f0ff" opacity="0.6"/>
+              </svg>
+              <span class="mission-rank">RANK S</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>MISI #04</span>
+                <span>2025</span>
+              </div>
+              <h3 class="project-card__title">CyberTask Mission Board</h3>
+              <p class="project-card__desc">
+                Aplikasi manajemen tugas harian ala papan misi dengan fitur tambah, filter prioritas, status selesai, dan penyimpanan LocalStorage.
+              </p>
+              <div class="project-card__tags">
+                <span>JavaScript</span>
+                <span>LocalStorage</span>
+                <span>UI State</span>
+              </div>
+              <button type="button" class="project-card__btn" data-open-modal="4">
+                <span>Buka Briefing Misi</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal" data-category="uiux" data-project-id="5">
+            <div class="project-card__thumb project-thumb--5">
+              <div class="thumb-badge">UI / UX</div>
+              <svg viewBox="0 0 320 180" class="thumb-svg" aria-hidden="true">
+                <rect width="320" height="180" fill="#160a24"/>
+                <circle cx="95" cy="90" r="38" fill="#ff2e93" opacity="0.7"/>
+                <circle cx="155" cy="90" r="38" fill="#ff9e2c" opacity="0.7"/>
+                <circle cx="215" cy="90" r="38" fill="#00f0ff" opacity="0.7"/>
+                <rect x="75" y="138" width="170" height="10" rx="5" fill="#ffffff" opacity="0.2"/>
+              </svg>
+              <span class="mission-rank">RANK A</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>MISI #05</span>
+                <span>2025</span>
+              </div>
+              <h3 class="project-card__title">Vice Design System Kit</h3>
+              <p class="project-card__desc">
+                Sistem desain komponen antarmuka lengkap mencakup palet warna neon gelap, tipografi, tombol, kartu, dan standar aksesibilitas.
+              </p>
+              <div class="project-card__tags">
+                <span>Design Tokens</span>
+                <span>CSS Variables</span>
+                <span>Figma</span>
+              </div>
+              <button type="button" class="project-card__btn" data-open-modal="5">
+                <span>Buka Briefing Misi</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card reveal" data-category="uiux" data-project-id="6">
+            <div class="project-card__thumb project-thumb--6">
+              <div class="thumb-badge">UI / UX</div>
+              <svg viewBox="0 0 320 180" class="thumb-svg" aria-hidden="true">
+                <rect width="320" height="180" fill="#0e1424"/>
+                <rect x="85" y="20" width="150" height="140" rx="16" fill="#181230" stroke="#ff5e9a" stroke-width="2"/>
+                <rect x="103" y="42" width="114" height="44" rx="8" fill="#ff2e93" opacity="0.35"/>
+                <rect x="103" y="98" width="52" height="40" rx="6" fill="#00f0ff" opacity="0.35"/>
+                <rect x="165" y="98" width="52" height="40" rx="6" fill="#ffd166" opacity="0.35"/>
+              </svg>
+              <span class="mission-rank">RANK A+</span>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__meta">
+                <span>MISI #06</span>
+                <span>2026</span>
+              </div>
+              <h3 class="project-card__title">AutoClub Garage UI</h3>
+              <p class="project-card__desc">
+                Redesain antarmuka kustomisasi kendaraan bergaya garasi modern dengan pemilih warna bodi, pratinjau spesifikasi, dan mode mobile-first.
+              </p>
+              <div class="project-card__tags">
+                <span>UI Prototype</span>
+                <span>Responsive</span>
+                <span>Interactive JS</span>
+              </div>
+              <button type="button" class="project-card__btn" data-open-modal="6">
+                <span>Buka Briefing Misi</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FORM KONTAK SECTION -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-kicker">03 // DIRECT DISPATCH</span>
+          <h2 class="section-title">HUBUNGI <span>SAYA</span></h2>
+          <p class="section-subtitle">Punya ide proyek, kolaborasi, atau pertanyaan? Kirim pesan langsung melalui formulir atau kontak di bawah ini.</p>
+        </div>
+
+        <div class="contact__grid">
+          <!-- Direct Contact Channels -->
+          <div class="contact__channels reveal">
+            <div class="channel-card">
+              <div class="channel-card__icon channel-card__icon--wa" aria-hidden="true">WA</div>
+              <div class="channel-card__body">
+                <span class="channel-card__label">WHATSAPP / TELEPON</span>
+                <a href="https://wa.me/6285863753603" target="_blank" rel="noopener noreferrer" class="channel-card__value">085863753603</a>
+                <div class="channel-card__actions">
+                  <a href="https://wa.me/6285863753603?text=Halo%20Muhammad%20Grandis,%20saya%20ingin%20berdiskusi%20tentang%20proyek." target="_blank" rel="noopener noreferrer" class="mini-action">Buka Chat</a>
+                  <button type="button" class="mini-action mini-action--copy" data-copy="085863753603">Salin Nomor</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-card__icon channel-card__icon--mail" aria-hidden="true">@</div>
+              <div class="channel-card__body">
+                <span class="channel-card__label">ALAMAT EMAIL</span>
+                <a href="mailto:grandisputra13@gmail.com" class="channel-card__value">grandisputra13@gmail.com</a>
+                <div class="channel-card__actions">
+                  <a href="mailto:grandisputra13@gmail.com?subject=Kolaborasi%20Website" class="mini-action">Kirim Email</a>
+                  <button type="button" class="mini-action mini-action--copy" data-copy="grandisputra13@gmail.com">Salin Email</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="vice-note">
+              <span class="vice-note__title">JAM OPERASIONAL // VICE TIME</span>
+              <p>Respon cepat via WhatsApp &amp; Email setiap hari. Siap membantu pembuatan website portofolio, company profile, hingga landing page bisnis.</p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form glass-panel reveal" id="contactForm" novalidate>
+            <div class="panel-header">
+              <span class="panel-badge">FORM KONTAK // ENCRYPTED</span>
+              <span class="panel-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="senderName">Nama Lengkap</label>
+                <input type="text" id="senderName" name="name" placeholder="Contoh: Raka Pratama" required />
+                <span class="form-error" id="errorName"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="senderEmail">Email Anda</label>
+                <input type="email" id="senderEmail" name="email" placeholder="nama@email.com" required />
+                <span class="form-error" id="errorEmail"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="senderSubject">Subjek / Keperluan</label>
+              <input type="text" id="senderSubject" name="subject" placeholder="Contoh: Pembuatan Website Company Profile" required />
+              <span class="form-error" id="errorSubject"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage">Pesan</label>
+              <textarea id="senderMessage" name="message" rows="5" placeholder="Ceritakan detail kebutuhan atau proyek Anda..." required></textarea>
+              <span class="form-error" id="errorMessage"></span>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn--primary btn--full">
+                <span>Kirim Pesan Sekarang</span>
+              </button>
+              <button type="button" class="btn btn--cyan btn--full" id="sendViaWaBtn">
+                <span>Kirim via WhatsApp</span>
+              </button>
+            </div>
+
+            <div class="form-feedback" id="formFeedback" role="status" aria-live="polite" hidden></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__badge">VI</span>
+        <div>
+          <strong>Muhammad Grandis Putra Haryadi</strong>
+          <p>Portofolio Pribadi — Tema GTA VI Vice Edition</p>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <a href="https://wa.me/6285863753603" target="_blank" rel="noopener noreferrer">WA: 085863753603</a>
+        <a href="mailto:grandisputra13@gmail.com">grandisputra13@gmail.com</a>
+        <a href="#hero" class="back-top">Kembali ke Atas ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__box">
+      <button type="button" class="modal__close" id="modalClose" aria-label="Tutup detail proyek">✕</button>
+      <span class="modal__kicker" id="modalCategory">MISSION BRIEFING</span>
+      <h3 class="modal__title" id="modalTitle">Judul Proyek</h3>
+      <p class="modal__desc" id="modalDesc"></p>
+
+      <div class="modal__section">
+        <h4>Fitur Utama</h4>
+        <ul class="modal__features" id="modalFeatures"></ul>
+      </div>
+
+      <div class="modal__section">
+        <h4>Teknologi</h4>
+        <div class="project-card__tags" id="modalTags"></div>
+      </div>
+
+      <div class="modal__footer">
+        <a href="#contact" class="btn btn--primary" id="modalContactCta">Diskusikan Proyek Serupa</a>
+        <button type="button" class="btn btn--ghost" id="modalCloseBtn">Tutup</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
